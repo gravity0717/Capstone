@@ -25,6 +25,14 @@
  ## 4. 노트북 구성 
 
 ### 4-1. dataWrangling_MUSINSA_VIEW.ipynb
+  - 크롤링한 조회수를 dataframe 에 삽입할 수 있게끔 정리하는 노트북 ->refined_data 라는 int형의 clean_view 데이터가 포함된csv file 을 만들었다.
 ### 4-2. analysis_MUSINSA_dataset.ipynb
+  - 데이터의 분포도를 통해 편향이 있다고 판단, log 값을 씌워 정규분포에 가깝게 전환하는 작업을 진행하였다.
+  - 조회수가 지표로서 역할을 하려면, 크롤링할 데이터 양을 얼만큼 정해야하는지를 판단하는 것이 중요하다. -> 조회수 변동 비교를 통해 판단 
 ### 4-3. data_to_dataFrame_MU.ipynb
+  - 라벨링한 데이터와 4-1에서 얻은 clean-view 와 4-2 에서 얻은 log-view 를 main 노트북(MultiCNN_MU_Dataset) 에서 쓸 수 있게끔 csv 최종저장 
+  - 결측지 (NaN) 제거 작업 
 ### 4-4. MuitiCNN_MU_dataset.ipynb
+  - 데이터셋 정의
+  - 모델 정의
+  - 학습 
